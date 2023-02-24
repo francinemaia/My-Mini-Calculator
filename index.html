@@ -12,18 +12,27 @@
 
   <body>
     <header>
-      <h1>My Calculator</h1>
+      <h1>Fran's Mini Calculator</h1>
       <div>
-        <label for="primeiroNumero">First Number (A)</label>
-        <input type="number" name="primeiroNumero" id="primeiroNumero">
-        <label for="segundoNumero">Second Number (B)</label>
-        <input type="number" name="segundoNumero" id="segundoNumero">
+        <label for="firstNumber">First Number (A)</label>
+        <input type="number" name="firstNumber" id="firstNumber">
+        <label for="secondNumber">Second Number (B)</label>
+        <input type="number" name="secondNumber" id="secondNumber">
         <input type="button" value="Calculate" onclick="calculate()">
       </div>
     </header>
     <main>
-      <div class="calculoCnt">
-
+      <div class="calcCnt">
+        <p class="calcName">Sum</p>
+        <p class="result" id="Sum"></p>
+      </div>
+      <div class="calcCnt">
+        <p class="calcName">Square root of A</p>
+        <p class="result" id="Square"></p>
+      </div>
+      <div class="calcCnt">
+        <p class="calcName">Percentage of A in relation to B</p>
+        <p class="result" id="Percentage"></p>
       </div>
     </main>
     <script defer src="./js/script.js"></script>
