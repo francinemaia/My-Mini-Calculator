@@ -19,6 +19,19 @@ function calculatePercentage(a, b) {
 }
 
 function calculate() {
-    const inputA = document.getElementById("firstNumber");
-    const inputB = document.getElementById("secondNumber");     
+    const inputA = document.getElementById("firstNumber").value;
+    const inputB = document.getElementById("secondNumber").value;  
+    
+    let a = parseFloat(inputA);
+    let b = parseFloat(InputB);
+
+    sum.innerHTML = calculateSum(a, b);
+    square.innerHTML = calculateSquare(a);
+    percentage.innerHTML = calculatePercentage(a, b);
+
+
 }
+
+console.log(`Soma de ${a} e ${b} é ${sum(a, b)}`);
+console.log(`O quadrado de ${a} é ${square(a)}`);
+console.log(`${a} é ${percentage(a, b)}% de ${b}`);
